@@ -1,0 +1,36 @@
+
+<div>
+    <div class="p-5 flex justify-evenly text-center">
+    <h1 >Enrolled Addhar cards List</h1>
+    <div class="flex">
+<app-logout></app-logout></div></div>
+<div class="flex items-center justify-center p-10 mt-5">
+
+<table class="table-auto ">
+    <thead>
+      <tr>
+        <th>First_Name</th>
+        <th>Last_Name</th>
+        <th>Aadhar_Number</th>
+        <th>Phone_Number</th>
+        <th>Email_Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let items of data">
+        <td>{{items.data.First_Name}}</td>
+        <td>{{items.data.Last_Name}}</td>
+        <td>{{items.data.Aadhar_Number}}</td>
+        <td>{{items.data.Phone_number}}</td>
+        <td>{{items.Email_Address}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div>
+
+    <a routerLink="/add" class="flex items-center justify-center"><button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+  Add new Record
+</button></a>
+  </div>
+</div>
